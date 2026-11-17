@@ -1,0 +1,639 @@
+{
+  "rulebook": 90106,
+  "fit_count": 10,
+  "inputs_sha256": "1da1d92a741db13d18afdb6a55622719d69b238ede177463080b3de71d2bb030",
+  "job_receipt_sha256": {
+    "ordinary-lora": "61cabbadd3f95b371137e1496728a519eec955ce3c86ee70e0b02ad82871930b",
+    "sparse-mask-123-budget-1000": "190e33107bfb9597f73b6356dfa5c041a9e0593b664f6121a84bed4d2bdb5728",
+    "sparse-mask-123-budget-2000": "49244fb8a72fa53a000d8d83e149cb9bb99b324b9bbccf59db0d7bbc7ab3b4ea",
+    "sparse-mask-124-budget-1000": "96da119cd0b4e4af08ca064df598c35bb5d9388ece550a5eb52d8e5faa359636",
+    "sparse-mask-124-budget-2000": "0b8aa3774ef51c11276eb960f3803c835d38e560fa54163097d9a98166b4bb31"
+  },
+  "ordinary": {
+    "frozen_hidden": {
+      "disagreement": {
+        "n": 128,
+        "a_correct": 60,
+        "b_correct": 68,
+        "both_correct": 0
+      },
+      "agreement": {
+        "n": 64,
+        "a_correct": 61,
+        "b_correct": 61,
+        "both_correct": 61
+      }
+    },
+    "frozen_visible": {
+      "disagreement": {
+        "n": 128,
+        "a_correct": 61,
+        "b_correct": 67,
+        "both_correct": 1
+      },
+      "agreement": {
+        "n": 64,
+        "a_correct": 59,
+        "b_correct": 62,
+        "both_correct": 59
+      }
+    },
+    "trained_hidden_seen_wording": {
+      "disagreement": {
+        "n": 128,
+        "a_correct": 128,
+        "b_correct": 128,
+        "both_correct": 128
+      },
+      "agreement": {
+        "n": 64,
+        "a_correct": 64,
+        "b_correct": 64,
+        "both_correct": 64
+      }
+    },
+    "trained_hidden_novel_wording": {
+      "disagreement": {
+        "n": 128,
+        "a_correct": 106,
+        "b_correct": 60,
+        "both_correct": 40
+      },
+      "agreement": {
+        "n": 64,
+        "a_correct": 64,
+        "b_correct": 64,
+        "both_correct": 64
+      }
+    },
+    "training": {
+      "A": {
+        "initial_adapter_sha256": "2faef59e26721b22e406434f1985e300d9849d59eb6875f2ab14a09359a1c939",
+        "final_adapter_sha256": "20215b60891c69241d29c254982a6f3c9ae5a6378771842c4ccbe460550da870",
+        "trainable_parameters": 4399104,
+        "seconds_train_and_dev": 48.82305110000016,
+        "peak_allocated_bytes": 1907500544,
+        "peak_reserved_bytes": 1971322880,
+        "dev_history": [
+          {
+            "epoch": 1,
+            "optimizer_steps": 48,
+            "mean_training_loss": 0.5334010720252991,
+            "dev_correct": 82,
+            "dev_total": 96
+          },
+          {
+            "epoch": 2,
+            "optimizer_steps": 48,
+            "mean_training_loss": 0.08732865750789642,
+            "dev_correct": 96,
+            "dev_total": 96
+          },
+          {
+            "epoch": 3,
+            "optimizer_steps": 48,
+            "mean_training_loss": 0.00010668619506759569,
+            "dev_correct": 96,
+            "dev_total": 96
+          },
+          {
+            "epoch": 4,
+            "optimizer_steps": 48,
+            "mean_training_loss": 7.032911526039243e-05,
+            "dev_correct": 96,
+            "dev_total": 96
+          },
+          {
+            "epoch": 5,
+            "optimizer_steps": 48,
+            "mean_training_loss": 5.060737021267414e-05,
+            "dev_correct": 96,
+            "dev_total": 96
+          },
+          {
+            "epoch": 6,
+            "optimizer_steps": 48,
+            "mean_training_loss": 3.7324360164348036e-05,
+            "dev_correct": 96,
+            "dev_total": 96
+          }
+        ]
+      },
+      "B": {
+        "initial_adapter_sha256": "2faef59e26721b22e406434f1985e300d9849d59eb6875f2ab14a09359a1c939",
+        "final_adapter_sha256": "f437852c9aeddac875d0696106d38a5fe4999666622f92ad59ab5d07b302aafa",
+        "trainable_parameters": 4399104,
+        "seconds_train_and_dev": 48.754891000004136,
+        "peak_allocated_bytes": 1906345472,
+        "peak_reserved_bytes": 1971322880,
+        "dev_history": [
+          {
+            "epoch": 1,
+            "optimizer_steps": 48,
+            "mean_training_loss": 0.54179847240448,
+            "dev_correct": 82,
+            "dev_total": 96
+          },
+          {
+            "epoch": 2,
+            "optimizer_steps": 48,
+            "mean_training_loss": 0.055659886449575424,
+            "dev_correct": 96,
+            "dev_total": 96
+          },
+          {
+            "epoch": 3,
+            "optimizer_steps": 48,
+            "mean_training_loss": 5.084734220872633e-05,
+            "dev_correct": 96,
+            "dev_total": 96
+          },
+          {
+            "epoch": 4,
+            "optimizer_steps": 48,
+            "mean_training_loss": 2.5939327315427363e-05,
+            "dev_correct": 96,
+            "dev_total": 96
+          },
+          {
+            "epoch": 5,
+            "optimizer_steps": 48,
+            "mean_training_loss": 1.67154757946264e-05,
+            "dev_correct": 96,
+            "dev_total": 96
+          },
+          {
+            "epoch": 6,
+            "optimizer_steps": 48,
+            "mean_training_loss": 1.1821163752756547e-05,
+            "dev_correct": 96,
+            "dev_total": 96
+          }
+        ]
+      }
+    },
+    "runtime": {
+      "device": "NVIDIA GeForce RTX 4060",
+      "dtype": "torch.bfloat16",
+      "torch": "2.9.1+cu128",
+      "torch_cuda": "12.8",
+      "peft": "0.18.0",
+      "transformers": "4.57.3",
+      "choice_token_ids": [
+        362,
+        425
+      ]
+    }
+  },
+  "sparse": [
+    {
+      "mask_seed": 123,
+      "budget": 1000,
+      "points": {
+        "144": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 70,
+              "b_correct": 65,
+              "both_correct": 11
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 72,
+              "b_correct": 58,
+              "both_correct": 5
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          }
+        },
+        "288": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 70,
+              "b_correct": 75,
+              "both_correct": 19
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 73,
+              "b_correct": 55,
+              "both_correct": 8
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          }
+        },
+        "432": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 87,
+              "b_correct": 121,
+              "both_correct": 81
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 65,
+              "b_correct": 60,
+              "both_correct": 16
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          }
+        }
+      },
+      "changed_parameters": [
+        1000,
+        1000
+      ],
+      "seconds_train_and_dev": [
+        91.54980950000754,
+        143.88908109998738
+      ],
+      "peak_allocated_bytes": [
+        1888129536,
+        1888129536
+      ],
+      "peak_reserved_bytes": [
+        1933574144,
+        1933574144
+      ]
+    },
+    {
+      "mask_seed": 123,
+      "budget": 2000,
+      "points": {
+        "144": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 64,
+              "b_correct": 89,
+              "both_correct": 51
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 57,
+              "b_correct": 64,
+              "both_correct": 10
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          }
+        },
+        "288": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 97,
+              "b_correct": 126,
+              "both_correct": 95
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 75,
+              "b_correct": 64,
+              "both_correct": 17
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          }
+        },
+        "432": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 110,
+              "b_correct": 124,
+              "both_correct": 106
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 73,
+              "b_correct": 63,
+              "both_correct": 18
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          }
+        }
+      },
+      "changed_parameters": [
+        2000,
+        2000
+      ],
+      "seconds_train_and_dev": [
+        152.95088319999923,
+        154.3386324000021
+      ],
+      "peak_allocated_bytes": [
+        1889180160,
+        1889180160
+      ],
+      "peak_reserved_bytes": [
+        1935671296,
+        1935671296
+      ]
+    },
+    {
+      "mask_seed": 124,
+      "budget": 1000,
+      "points": {
+        "144": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 67,
+              "b_correct": 65,
+              "both_correct": 12
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 61,
+              "b_correct": 68,
+              "both_correct": 20
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          }
+        },
+        "288": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 62,
+              "b_correct": 102,
+              "both_correct": 36
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 74,
+              "b_correct": 79,
+              "both_correct": 35
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          }
+        },
+        "432": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 75,
+              "b_correct": 128,
+              "both_correct": 75
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 71,
+              "b_correct": 79,
+              "both_correct": 31
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          }
+        }
+      },
+      "changed_parameters": [
+        1000,
+        1000
+      ],
+      "seconds_train_and_dev": [
+        138.69119030000002,
+        144.97168760000204
+      ],
+      "peak_allocated_bytes": [
+        1888241152,
+        1888241152
+      ],
+      "peak_reserved_bytes": [
+        1933574144,
+        1933574144
+      ]
+    },
+    {
+      "mask_seed": 124,
+      "budget": 2000,
+      "points": {
+        "144": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 65,
+              "b_correct": 118,
+              "both_correct": 58
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 65,
+              "b_correct": 56,
+              "both_correct": 13
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          }
+        },
+        "288": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 94,
+              "b_correct": 128,
+              "both_correct": 94
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 66,
+              "b_correct": 50,
+              "both_correct": 16
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          }
+        },
+        "432": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 115,
+              "b_correct": 128,
+              "both_correct": 115
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 66,
+              "b_correct": 51,
+              "both_correct": 17
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          }
+        }
+      },
+      "changed_parameters": [
+        2000,
+        2000
+      ],
+      "seconds_train_and_dev": [
+        146.01703590000398,
+        118.43095389999507
+      ],
+      "peak_allocated_bytes": [
+        1889288704,
+        1889288704
+      ],
+      "peak_reserved_bytes": [
+        1935671296,
+        1935671296
+      ]
+    }
+  ],
+  "edl": []
+}

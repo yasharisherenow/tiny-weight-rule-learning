@@ -1,0 +1,28 @@
+{
+  "paired_correct": "Count a parcel only if both copies predict their own assigned answer.",
+  "choice_tie": "A",
+  "sparse_primary_template": 0,
+  "sparse_transfer_template": 2,
+  "sparse_steps": [
+    144,
+    288,
+    432
+  ],
+  "sparse_disagreement_total": 128,
+  "sparse_best_fixed_shortcut": 64,
+  "sparse_summary": "Report each draw and mask, the 144 to 432 step change, and the range of draw means.",
+  "edl_bits_per_label": "(mean first epoch pre-update full-vocabulary label NLL in nats minus mean final held-out full-vocabulary label NLL in nats) divided by ln(2); average across copies.",
+  "edl_strata": [
+    "all",
+    "disagreement",
+    "agreement"
+  ],
+  "edl_disagreement_total": 288,
+  "edl_comparable_min_paired_correct": 274,
+  "edl_comparable_max_final_loss_span_bits_per_label": 0.05,
+  "edl_contrasts": [
+    "format-only minus prior-rulebook",
+    "opposite-rulebook minus format-only",
+    "opposite-rulebook minus prior-rulebook"
+  ]
+}

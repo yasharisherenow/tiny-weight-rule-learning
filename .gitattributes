@@ -1,0 +1,5 @@
+# The frozen experiment records hashes of the Python training sources.
+*.py text eol=lf
+results/confirmatory/** -text whitespace=cr-at-eol
+*.png binary
+*.pdf binary

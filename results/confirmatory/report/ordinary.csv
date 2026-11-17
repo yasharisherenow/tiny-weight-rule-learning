@@ -1,0 +1,13 @@
+draw,condition,disagreement_n,disagreement_a_correct,disagreement_b_correct,disagreement_both_correct,agreement_n,agreement_a_correct,agreement_b_correct,agreement_both_correct
+90101,frozen_hidden,128,65,63,0,64,63,63,63
+90101,frozen_visible,128,66,62,0,64,58,59,57
+90101,trained_hidden_seen_wording,128,128,128,128,64,64,64,64
+90101,trained_hidden_novel_wording,128,98,70,44,64,64,64,64
+90102,frozen_hidden,128,64,64,0,64,55,55,55
+90102,frozen_visible,128,64,64,0,64,46,49,45
+90102,trained_hidden_seen_wording,128,127,127,127,64,64,64,64
+90102,trained_hidden_novel_wording,128,126,67,65,64,64,64,64
+90106,frozen_hidden,128,60,68,0,64,61,61,61
+90106,frozen_visible,128,61,67,1,64,59,62,59
+90106,trained_hidden_seen_wording,128,128,128,128,64,64,64,64
+90106,trained_hidden_novel_wording,128,106,60,40,64,64,64,64

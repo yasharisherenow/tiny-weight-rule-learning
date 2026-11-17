@@ -1,0 +1,1778 @@
+{
+  "rulebook": 90102,
+  "fit_count": 24,
+  "inputs_sha256": "1da1d92a741db13d18afdb6a55622719d69b238ede177463080b3de71d2bb030",
+  "job_receipt_sha256": {
+    "ordinary-lora": "443082ba92da881e1de04f1919903b045cee1f1c4c3e7c09713b2746ed7a2786",
+    "sparse-mask-123-budget-1000": "243cbf4c926c5eca110a1ca63b699d4c91d553b7fdd3a93a18b30024001e3c49",
+    "sparse-mask-123-budget-2000": "6f70ce89c18f672b59dbef996a9852ab98e7471078556ab7616f83cd08fa49f7",
+    "sparse-mask-124-budget-1000": "55c3946b15d8ca80b740f204d9c00358088ceeb0e0087b7f592b0bfb76f5cf9d",
+    "sparse-mask-124-budget-2000": "78d31cfdc4d2cb356217999d7848a45745b5328cf53ca5858e5a2e8c83118bac",
+    "edl-rate-0.00010": "08131a3d2f6da86dd651c16fc7da76f7dbc8ed1e6753767b6459a844da1da9f1",
+    "edl-rate-0.00005": "2d15694d26ea111cde3a698192e66909a8b2fc0e5ac66747579dd5491aeb5358"
+  },
+  "ordinary": {
+    "frozen_hidden": {
+      "disagreement": {
+        "n": 128,
+        "a_correct": 64,
+        "b_correct": 64,
+        "both_correct": 0
+      },
+      "agreement": {
+        "n": 64,
+        "a_correct": 55,
+        "b_correct": 55,
+        "both_correct": 55
+      }
+    },
+    "frozen_visible": {
+      "disagreement": {
+        "n": 128,
+        "a_correct": 64,
+        "b_correct": 64,
+        "both_correct": 0
+      },
+      "agreement": {
+        "n": 64,
+        "a_correct": 46,
+        "b_correct": 49,
+        "both_correct": 45
+      }
+    },
+    "trained_hidden_seen_wording": {
+      "disagreement": {
+        "n": 128,
+        "a_correct": 127,
+        "b_correct": 127,
+        "both_correct": 127
+      },
+      "agreement": {
+        "n": 64,
+        "a_correct": 64,
+        "b_correct": 64,
+        "both_correct": 64
+      }
+    },
+    "trained_hidden_novel_wording": {
+      "disagreement": {
+        "n": 128,
+        "a_correct": 126,
+        "b_correct": 67,
+        "both_correct": 65
+      },
+      "agreement": {
+        "n": 64,
+        "a_correct": 64,
+        "b_correct": 64,
+        "both_correct": 64
+      }
+    },
+    "training": {
+      "A": {
+        "initial_adapter_sha256": "2faef59e26721b22e406434f1985e300d9849d59eb6875f2ab14a09359a1c939",
+        "final_adapter_sha256": "82e43fc8b8f5325d0d1a5183fa4ad1b8f638ae2b14e3f536ab4693421ad343dc",
+        "trainable_parameters": 4399104,
+        "seconds_train_and_dev": 102.35507799999323,
+        "peak_allocated_bytes": 1907508224,
+        "peak_reserved_bytes": 1969225728,
+        "dev_history": [
+          {
+            "epoch": 1,
+            "optimizer_steps": 48,
+            "mean_training_loss": 0.36540472507476807,
+            "dev_correct": 96,
+            "dev_total": 96
+          },
+          {
+            "epoch": 2,
+            "optimizer_steps": 48,
+            "mean_training_loss": 0.00010839997412404045,
+            "dev_correct": 96,
+            "dev_total": 96
+          },
+          {
+            "epoch": 3,
+            "optimizer_steps": 48,
+            "mean_training_loss": 5.122615766595118e-05,
+            "dev_correct": 96,
+            "dev_total": 96
+          },
+          {
+            "epoch": 4,
+            "optimizer_steps": 48,
+            "mean_training_loss": 3.2789132092148066e-05,
+            "dev_correct": 96,
+            "dev_total": 96
+          },
+          {
+            "epoch": 5,
+            "optimizer_steps": 48,
+            "mean_training_loss": 2.2893347704666667e-05,
+            "dev_correct": 96,
+            "dev_total": 96
+          },
+          {
+            "epoch": 6,
+            "optimizer_steps": 48,
+            "mean_training_loss": 1.6797413991298527e-05,
+            "dev_correct": 96,
+            "dev_total": 96
+          }
+        ]
+      },
+      "B": {
+        "initial_adapter_sha256": "2faef59e26721b22e406434f1985e300d9849d59eb6875f2ab14a09359a1c939",
+        "final_adapter_sha256": "15c7303701a95ad4e854b748bf36fb0d74d969895f8d17aae55a4c727fac204c",
+        "trainable_parameters": 4399104,
+        "seconds_train_and_dev": 101.71114639998996,
+        "peak_allocated_bytes": 1906353152,
+        "peak_reserved_bytes": 1969225728,
+        "dev_history": [
+          {
+            "epoch": 1,
+            "optimizer_steps": 48,
+            "mean_training_loss": 0.3366374969482422,
+            "dev_correct": 96,
+            "dev_total": 96
+          },
+          {
+            "epoch": 2,
+            "optimizer_steps": 48,
+            "mean_training_loss": 0.00048788668937049806,
+            "dev_correct": 96,
+            "dev_total": 96
+          },
+          {
+            "epoch": 3,
+            "optimizer_steps": 48,
+            "mean_training_loss": 0.0001260279823327437,
+            "dev_correct": 96,
+            "dev_total": 96
+          },
+          {
+            "epoch": 4,
+            "optimizer_steps": 48,
+            "mean_training_loss": 7.255641685333103e-05,
+            "dev_correct": 96,
+            "dev_total": 96
+          },
+          {
+            "epoch": 5,
+            "optimizer_steps": 48,
+            "mean_training_loss": 4.7372886911034584e-05,
+            "dev_correct": 96,
+            "dev_total": 96
+          },
+          {
+            "epoch": 6,
+            "optimizer_steps": 48,
+            "mean_training_loss": 3.294592534075491e-05,
+            "dev_correct": 96,
+            "dev_total": 96
+          }
+        ]
+      }
+    },
+    "runtime": {
+      "device": "NVIDIA GeForce RTX 4060",
+      "dtype": "torch.bfloat16",
+      "torch": "2.9.1+cu128",
+      "torch_cuda": "12.8",
+      "peft": "0.18.0",
+      "transformers": "4.57.3",
+      "choice_token_ids": [
+        362,
+        425
+      ]
+    }
+  },
+  "sparse": [
+    {
+      "mask_seed": 123,
+      "budget": 1000,
+      "points": {
+        "144": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 76,
+              "b_correct": 64,
+              "both_correct": 17
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 80,
+              "b_correct": 54,
+              "both_correct": 8
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 62,
+              "b_correct": 64,
+              "both_correct": 62
+            }
+          }
+        },
+        "288": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 118,
+              "b_correct": 118,
+              "both_correct": 110
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 66,
+              "b_correct": 75,
+              "both_correct": 41
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          }
+        },
+        "432": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 125,
+              "b_correct": 125,
+              "both_correct": 123
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 71,
+              "b_correct": 81,
+              "both_correct": 48
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          }
+        }
+      },
+      "changed_parameters": [
+        1000,
+        1000
+      ],
+      "seconds_train_and_dev": [
+        143.7096722999995,
+        142.02995369999553
+      ],
+      "peak_allocated_bytes": [
+        1887249920,
+        1886302720
+      ],
+      "peak_reserved_bytes": [
+        1933574144,
+        1933574144
+      ]
+    },
+    {
+      "mask_seed": 123,
+      "budget": 2000,
+      "points": {
+        "144": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 117,
+              "b_correct": 105,
+              "both_correct": 94
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 94,
+              "b_correct": 64,
+              "both_correct": 39
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 63,
+              "both_correct": 63
+            }
+          }
+        },
+        "288": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 127,
+              "b_correct": 125,
+              "both_correct": 124
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 84,
+              "b_correct": 62,
+              "both_correct": 44
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          }
+        },
+        "432": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 126,
+              "b_correct": 126,
+              "both_correct": 124
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 81,
+              "b_correct": 62,
+              "both_correct": 41
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          }
+        }
+      },
+      "changed_parameters": [
+        2000,
+        2000
+      ],
+      "seconds_train_and_dev": [
+        146.58839389999048,
+        152.42723590000242
+      ],
+      "peak_allocated_bytes": [
+        1888300544,
+        1887353344
+      ],
+      "peak_reserved_bytes": [
+        1935671296,
+        1935671296
+      ]
+    },
+    {
+      "mask_seed": 124,
+      "budget": 1000,
+      "points": {
+        "144": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 72,
+              "b_correct": 76,
+              "both_correct": 23
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 60,
+              "b_correct": 67,
+              "both_correct": 8
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          }
+        },
+        "288": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 87,
+              "b_correct": 117,
+              "both_correct": 76
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 57,
+              "b_correct": 71,
+              "both_correct": 34
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          }
+        },
+        "432": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 111,
+              "b_correct": 124,
+              "both_correct": 107
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 69,
+              "b_correct": 77,
+              "both_correct": 48
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          }
+        }
+      },
+      "changed_parameters": [
+        1000,
+        1000
+      ],
+      "seconds_train_and_dev": [
+        147.09282900000107,
+        144.52008230000501
+      ],
+      "peak_allocated_bytes": [
+        1887361536,
+        1886414336
+      ],
+      "peak_reserved_bytes": [
+        1933574144,
+        1933574144
+      ]
+    },
+    {
+      "mask_seed": 124,
+      "budget": 2000,
+      "points": {
+        "144": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 107,
+              "b_correct": 114,
+              "both_correct": 93
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 66,
+              "b_correct": 68,
+              "both_correct": 15
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          }
+        },
+        "288": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 127,
+              "b_correct": 127,
+              "both_correct": 126
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 67,
+              "b_correct": 75,
+              "both_correct": 41
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          }
+        },
+        "432": {
+          "familiar": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 127,
+              "b_correct": 126,
+              "both_correct": 125
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          },
+          "novel": {
+            "disagreement": {
+              "n": 128,
+              "a_correct": 67,
+              "b_correct": 74,
+              "both_correct": 40
+            },
+            "agreement": {
+              "n": 64,
+              "a_correct": 64,
+              "b_correct": 64,
+              "both_correct": 64
+            }
+          }
+        }
+      },
+      "changed_parameters": [
+        2000,
+        2000
+      ],
+      "seconds_train_and_dev": [
+        133.1135215000104,
+        141.97501729999203
+      ],
+      "peak_allocated_bytes": [
+        1888409088,
+        1887461888
+      ],
+      "peak_reserved_bytes": [
+        1935671296,
+        1935671296
+      ]
+    }
+  ],
+  "edl": [
+    {
+      "rate": 0.0001,
+      "conditions": {
+        "prior-rulebook": {
+          "paired_accuracy": {
+            "disagreement": {
+              "n": 288,
+              "a_correct": 288,
+              "b_correct": 288,
+              "both_correct": 288
+            },
+            "agreement": {
+              "n": 96,
+              "a_correct": 96,
+              "b_correct": 96,
+              "both_correct": 96
+            }
+          },
+          "mean_edl_bits_per_label": {
+            "all": 0.02070912860537036,
+            "disagreement": 0.027604658062040596,
+            "agreement": 2.2540235359624498e-05
+          },
+          "mean_final_bits_per_label": 1.416572982364981e-05,
+          "training": {
+            "A": {
+              "seconds_train_and_dev": 81.92853219999233,
+              "peak_allocated_bytes": 1906355712,
+              "peak_reserved_bytes": 1969225728,
+              "initial_adapter_sha256": "82e43fc8b8f5325d0d1a5183fa4ad1b8f638ae2b14e3f536ab4693421ad343dc"
+            },
+            "B": {
+              "seconds_train_and_dev": 101.63987030000135,
+              "peak_allocated_bytes": 1906355712,
+              "peak_reserved_bytes": 1969225728,
+              "initial_adapter_sha256": "15c7303701a95ad4e854b748bf36fb0d74d969895f8d17aae55a4c727fac204c"
+            }
+          }
+        },
+        "format-only": {
+          "paired_accuracy": {
+            "disagreement": {
+              "n": 288,
+              "a_correct": 288,
+              "b_correct": 288,
+              "both_correct": 288
+            },
+            "agreement": {
+              "n": 96,
+              "a_correct": 96,
+              "b_correct": 96,
+              "both_correct": 96
+            }
+          },
+          "mean_edl_bits_per_label": {
+            "all": 0.6030971422475646,
+            "disagreement": 0.8010290588080731,
+            "agreement": 0.00930139256603877
+          },
+          "mean_final_bits_per_label": 0.00031837525611053526,
+          "training": {
+            "A": {
+              "seconds_train_and_dev": 95.50172090000706,
+              "peak_allocated_bytes": 1906355712,
+              "peak_reserved_bytes": 1969225728,
+              "initial_adapter_sha256": "36c667d7a6385a5bee2a4d08567cd61e1c147fc943f43ae711b2b43bfe0d833d"
+            },
+            "B": {
+              "seconds_train_and_dev": 103.40092420000292,
+              "peak_allocated_bytes": 1906355712,
+              "peak_reserved_bytes": 1969225728,
+              "initial_adapter_sha256": "3239d05a5ba87d928dc1c303fd2e4a3bba278ee9bb8c3f30b9c9d99a08fc5cb8"
+            }
+          }
+        },
+        "opposite-rulebook": {
+          "paired_accuracy": {
+            "disagreement": {
+              "n": 288,
+              "a_correct": 288,
+              "b_correct": 288,
+              "both_correct": 288
+            },
+            "agreement": {
+              "n": 96,
+              "a_correct": 96,
+              "b_correct": 96,
+              "both_correct": 96
+            }
+          },
+          "mean_edl_bits_per_label": {
+            "all": 1.4615850687713863,
+            "disagreement": 1.8803572005589175,
+            "agreement": 0.20526867340879257
+          },
+          "mean_final_bits_per_label": 0.00022217410968772012,
+          "training": {
+            "A": {
+              "seconds_train_and_dev": 102.22258719999809,
+              "peak_allocated_bytes": 1906355712,
+              "peak_reserved_bytes": 1969225728,
+              "initial_adapter_sha256": "15c7303701a95ad4e854b748bf36fb0d74d969895f8d17aae55a4c727fac204c"
+            },
+            "B": {
+              "seconds_train_and_dev": 102.72749020000629,
+              "peak_allocated_bytes": 1906355712,
+              "peak_reserved_bytes": 1969225728,
+              "initial_adapter_sha256": "82e43fc8b8f5325d0d1a5183fa4ad1b8f638ae2b14e3f536ab4693421ad343dc"
+            }
+          }
+        }
+      },
+      "final_loss_span_bits_per_label": 0.00030420952628688544,
+      "endpoints_comparable": true,
+      "initial_adapter_sha256": {
+        "prior-rulebook": {
+          "A": "82e43fc8b8f5325d0d1a5183fa4ad1b8f638ae2b14e3f536ab4693421ad343dc",
+          "B": "15c7303701a95ad4e854b748bf36fb0d74d969895f8d17aae55a4c727fac204c"
+        },
+        "format-only": {
+          "A": "36c667d7a6385a5bee2a4d08567cd61e1c147fc943f43ae711b2b43bfe0d833d",
+          "B": "3239d05a5ba87d928dc1c303fd2e4a3bba278ee9bb8c3f30b9c9d99a08fc5cb8"
+        },
+        "opposite-rulebook": {
+          "A": "15c7303701a95ad4e854b748bf36fb0d74d969895f8d17aae55a4c727fac204c",
+          "B": "82e43fc8b8f5325d0d1a5183fa4ad1b8f638ae2b14e3f536ab4693421ad343dc"
+        }
+      },
+      "first_exposure_index_order": [
+        93,
+        180,
+        352,
+        221,
+        336,
+        218,
+        227,
+        152,
+        66,
+        139,
+        158,
+        53,
+        324,
+        372,
+        88,
+        343,
+        123,
+        200,
+        265,
+        246,
+        291,
+        306,
+        283,
+        130,
+        106,
+        34,
+        55,
+        77,
+        225,
+        280,
+        89,
+        254,
+        310,
+        94,
+        277,
+        43,
+        29,
+        85,
+        72,
+        179,
+        242,
+        175,
+        270,
+        231,
+        203,
+        256,
+        113,
+        217,
+        91,
+        122,
+        299,
+        26,
+        345,
+        230,
+        2,
+        38,
+        178,
+        278,
+        263,
+        325,
+        156,
+        358,
+        276,
+        210,
+        68,
+        237,
+        154,
+        10,
+        65,
+        371,
+        209,
+        228,
+        64,
+        100,
+        80,
+        120,
+        357,
+        271,
+        266,
+        127,
+        74,
+        97,
+        99,
+        37,
+        315,
+        19,
+        360,
+        159,
+        359,
+        220,
+        307,
+        162,
+        151,
+        240,
+        223,
+        249,
+        251,
+        7,
+        207,
+        157,
+        211,
+        149,
+        344,
+        208,
+        177,
+        96,
+        11,
+        311,
+        338,
+        69,
+        303,
+        6,
+        381,
+        305,
+        109,
+        170,
+        133,
+        167,
+        9,
+        118,
+        253,
+        31,
+        59,
+        323,
+        322,
+        238,
+        164,
+        377,
+        144,
+        341,
+        188,
+        261,
+        173,
+        103,
+        284,
+        25,
+        362,
+        318,
+        105,
+        192,
+        90,
+        374,
+        143,
+        269,
+        48,
+        104,
+        320,
+        62,
+        198,
+        147,
+        146,
+        290,
+        190,
+        191,
+        335,
+        281,
+        60,
+        131,
+        165,
+        84,
+        8,
+        292,
+        169,
+        368,
+        288,
+        18,
+        1,
+        268,
+        340,
+        364,
+        141,
+        329,
+        259,
+        86,
+        294,
+        286,
+        333,
+        30,
+        115,
+        132,
+        334,
+        355,
+        297,
+        171,
+        102,
+        347,
+        182,
+        317,
+        339,
+        313,
+        226,
+        54,
+        361,
+        314,
+        247,
+        245,
+        42,
+        380,
+        121,
+        168,
+        201,
+        264,
+        196,
+        257,
+        354,
+        17,
+        124,
+        187,
+        21,
+        20,
+        145,
+        213,
+        14,
+        61,
+        267,
+        206,
+        212,
+        92,
+        296,
+        4,
+        304,
+        82,
+        153,
+        250,
+        330,
+        199,
+        300,
+        41,
+        243,
+        95,
+        39,
+        50,
+        155,
+        241,
+        163,
+        215,
+        76,
+        160,
+        222,
+        27,
+        233,
+        129,
+        45,
+        262,
+        272,
+        67,
+        248,
+        224,
+        184,
+        244,
+        0,
+        328,
+        319,
+        366,
+        75,
+        382,
+        349,
+        363,
+        58,
+        5,
+        128,
+        239,
+        195,
+        197,
+        32,
+        350,
+        351,
+        78,
+        56,
+        24,
+        46,
+        252,
+        260,
+        70,
+        298,
+        326,
+        204,
+        219,
+        134,
+        275,
+        126,
+        376,
+        337,
+        73,
+        234,
+        202,
+        255,
+        289,
+        293,
+        108,
+        33,
+        137,
+        205,
+        161,
+        369,
+        117,
+        28,
+        166,
+        356,
+        285,
+        138,
+        383,
+        236,
+        312,
+        378,
+        273,
+        87,
+        36,
+        136,
+        107,
+        181,
+        189,
+        83,
+        186,
+        232,
+        348,
+        342,
+        51,
+        365,
+        331,
+        148,
+        116,
+        23,
+        35,
+        98,
+        295,
+        185,
+        316,
+        321,
+        150,
+        282,
+        40,
+        193,
+        63,
+        274,
+        235,
+        22,
+        135,
+        309,
+        176,
+        183,
+        49,
+        194,
+        367,
+        375,
+        172,
+        110,
+        79,
+        353,
+        174,
+        370,
+        81,
+        3,
+        142,
+        301,
+        229,
+        112,
+        214,
+        373,
+        332,
+        101,
+        287,
+        13,
+        308,
+        258,
+        119,
+        111,
+        47,
+        15,
+        16,
+        216,
+        302,
+        44,
+        279,
+        346,
+        52,
+        71,
+        114,
+        125,
+        140,
+        379,
+        12,
+        57,
+        327
+      ],
+      "format_exposure_training": {
+        "A": {
+          "initial_adapter_sha256": "2faef59e26721b22e406434f1985e300d9849d59eb6875f2ab14a09359a1c939",
+          "final_adapter_sha256": "36c667d7a6385a5bee2a4d08567cd61e1c147fc943f43ae711b2b43bfe0d833d",
+          "trainable_parameters": 4399104,
+          "seconds_train_and_dev": 103.16061239999544,
+          "peak_allocated_bytes": 1907508224,
+          "peak_reserved_bytes": 1969225728,
+          "dev_history": [
+            {
+              "epoch": 1,
+              "optimizer_steps": 48,
+              "mean_training_loss": 0.5825459361076355,
+              "dev_correct": 62,
+              "dev_total": 96
+            },
+            {
+              "epoch": 2,
+              "optimizer_steps": 48,
+              "mean_training_loss": 0.5266494154930115,
+              "dev_correct": 61,
+              "dev_total": 96
+            },
+            {
+              "epoch": 3,
+              "optimizer_steps": 48,
+              "mean_training_loss": 0.5249525308609009,
+              "dev_correct": 64,
+              "dev_total": 96
+            },
+            {
+              "epoch": 4,
+              "optimizer_steps": 48,
+              "mean_training_loss": 0.5127971768379211,
+              "dev_correct": 58,
+              "dev_total": 96
+            },
+            {
+              "epoch": 5,
+              "optimizer_steps": 48,
+              "mean_training_loss": 0.5081755518913269,
+              "dev_correct": 63,
+              "dev_total": 96
+            },
+            {
+              "epoch": 6,
+              "optimizer_steps": 48,
+              "mean_training_loss": 0.5136775374412537,
+              "dev_correct": 62,
+              "dev_total": 96
+            }
+          ]
+        },
+        "B": {
+          "initial_adapter_sha256": "2faef59e26721b22e406434f1985e300d9849d59eb6875f2ab14a09359a1c939",
+          "final_adapter_sha256": "3239d05a5ba87d928dc1c303fd2e4a3bba278ee9bb8c3f30b9c9d99a08fc5cb8",
+          "trainable_parameters": 4399104,
+          "seconds_train_and_dev": 102.09180470000138,
+          "peak_allocated_bytes": 1906353152,
+          "peak_reserved_bytes": 1969225728,
+          "dev_history": [
+            {
+              "epoch": 1,
+              "optimizer_steps": 48,
+              "mean_training_loss": 0.6050970554351807,
+              "dev_correct": 63,
+              "dev_total": 96
+            },
+            {
+              "epoch": 2,
+              "optimizer_steps": 48,
+              "mean_training_loss": 0.5320713520050049,
+              "dev_correct": 64,
+              "dev_total": 96
+            },
+            {
+              "epoch": 3,
+              "optimizer_steps": 48,
+              "mean_training_loss": 0.5324505567550659,
+              "dev_correct": 64,
+              "dev_total": 96
+            },
+            {
+              "epoch": 4,
+              "optimizer_steps": 48,
+              "mean_training_loss": 0.5260991454124451,
+              "dev_correct": 62,
+              "dev_total": 96
+            },
+            {
+              "epoch": 5,
+              "optimizer_steps": 48,
+              "mean_training_loss": 0.5175889134407043,
+              "dev_correct": 64,
+              "dev_total": 96
+            },
+            {
+              "epoch": 6,
+              "optimizer_steps": 48,
+              "mean_training_loss": 0.499647319316864,
+              "dev_correct": 64,
+              "dev_total": 96
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rate": 5e-05,
+      "conditions": {
+        "prior-rulebook": {
+          "paired_accuracy": {
+            "disagreement": {
+              "n": 288,
+              "a_correct": 288,
+              "b_correct": 288,
+              "both_correct": 288
+            },
+            "agreement": {
+              "n": 96,
+              "a_correct": 96,
+              "b_correct": 96,
+              "both_correct": 96
+            }
+          },
+          "mean_edl_bits_per_label": {
+            "all": 7.958603699196133e-07,
+            "disagreement": 8.876730398859552e-07,
+            "agreement": 5.20422360020587e-07
+          },
+          "mean_final_bits_per_label": 2.1497830076480478e-08,
+          "training": {
+            "A": {
+              "seconds_train_and_dev": 103.23379640000348,
+              "peak_allocated_bytes": 1907510784,
+              "peak_reserved_bytes": 1969225728,
+              "initial_adapter_sha256": "82e43fc8b8f5325d0d1a5183fa4ad1b8f638ae2b14e3f536ab4693421ad343dc"
+            },
+            "B": {
+              "seconds_train_and_dev": 101.55863989998761,
+              "peak_allocated_bytes": 1906355712,
+              "peak_reserved_bytes": 1969225728,
+              "initial_adapter_sha256": "15c7303701a95ad4e854b748bf36fb0d74d969895f8d17aae55a4c727fac204c"
+            }
+          }
+        },
+        "format-only": {
+          "paired_accuracy": {
+            "disagreement": {
+              "n": 288,
+              "a_correct": 288,
+              "b_correct": 288,
+              "both_correct": 288
+            },
+            "agreement": {
+              "n": 96,
+              "a_correct": 96,
+              "b_correct": 96,
+              "both_correct": 96
+            }
+          },
+          "mean_edl_bits_per_label": {
+            "all": 0.7044777963733284,
+            "disagreement": 0.9377447098418141,
+            "agreement": 0.00467705596787085
+          },
+          "mean_final_bits_per_label": 0.00038286884176407253,
+          "training": {
+            "A": {
+              "seconds_train_and_dev": 102.28987499998766,
+              "peak_allocated_bytes": 1906355712,
+              "peak_reserved_bytes": 1969225728,
+              "initial_adapter_sha256": "36c667d7a6385a5bee2a4d08567cd61e1c147fc943f43ae711b2b43bfe0d833d"
+            },
+            "B": {
+              "seconds_train_and_dev": 99.20761069998844,
+              "peak_allocated_bytes": 1906355712,
+              "peak_reserved_bytes": 1969225728,
+              "initial_adapter_sha256": "3239d05a5ba87d928dc1c303fd2e4a3bba278ee9bb8c3f30b9c9d99a08fc5cb8"
+            }
+          }
+        },
+        "opposite-rulebook": {
+          "paired_accuracy": {
+            "disagreement": {
+              "n": 288,
+              "a_correct": 288,
+              "b_correct": 287,
+              "both_correct": 287
+            },
+            "agreement": {
+              "n": 96,
+              "a_correct": 96,
+              "b_correct": 96,
+              "both_correct": 96
+            }
+          },
+          "mean_edl_bits_per_label": {
+            "all": 2.0656276655968524,
+            "disagreement": 2.7020424018616707,
+            "agreement": 0.15638345680239915
+          },
+          "mean_final_bits_per_label": 0.0026972354358406193,
+          "training": {
+            "A": {
+              "seconds_train_and_dev": 79.70857539999997,
+              "peak_allocated_bytes": 1906355712,
+              "peak_reserved_bytes": 1969225728,
+              "initial_adapter_sha256": "15c7303701a95ad4e854b748bf36fb0d74d969895f8d17aae55a4c727fac204c"
+            },
+            "B": {
+              "seconds_train_and_dev": 64.75980539999728,
+              "peak_allocated_bytes": 1906355712,
+              "peak_reserved_bytes": 1969225728,
+              "initial_adapter_sha256": "82e43fc8b8f5325d0d1a5183fa4ad1b8f638ae2b14e3f536ab4693421ad343dc"
+            }
+          }
+        }
+      },
+      "final_loss_span_bits_per_label": 0.002697213938010543,
+      "endpoints_comparable": true,
+      "initial_adapter_sha256": {
+        "prior-rulebook": {
+          "A": "82e43fc8b8f5325d0d1a5183fa4ad1b8f638ae2b14e3f536ab4693421ad343dc",
+          "B": "15c7303701a95ad4e854b748bf36fb0d74d969895f8d17aae55a4c727fac204c"
+        },
+        "format-only": {
+          "A": "36c667d7a6385a5bee2a4d08567cd61e1c147fc943f43ae711b2b43bfe0d833d",
+          "B": "3239d05a5ba87d928dc1c303fd2e4a3bba278ee9bb8c3f30b9c9d99a08fc5cb8"
+        },
+        "opposite-rulebook": {
+          "A": "15c7303701a95ad4e854b748bf36fb0d74d969895f8d17aae55a4c727fac204c",
+          "B": "82e43fc8b8f5325d0d1a5183fa4ad1b8f638ae2b14e3f536ab4693421ad343dc"
+        }
+      },
+      "first_exposure_index_order": [
+        93,
+        180,
+        352,
+        221,
+        336,
+        218,
+        227,
+        152,
+        66,
+        139,
+        158,
+        53,
+        324,
+        372,
+        88,
+        343,
+        123,
+        200,
+        265,
+        246,
+        291,
+        306,
+        283,
+        130,
+        106,
+        34,
+        55,
+        77,
+        225,
+        280,
+        89,
+        254,
+        310,
+        94,
+        277,
+        43,
+        29,
+        85,
+        72,
+        179,
+        242,
+        175,
+        270,
+        231,
+        203,
+        256,
+        113,
+        217,
+        91,
+        122,
+        299,
+        26,
+        345,
+        230,
+        2,
+        38,
+        178,
+        278,
+        263,
+        325,
+        156,
+        358,
+        276,
+        210,
+        68,
+        237,
+        154,
+        10,
+        65,
+        371,
+        209,
+        228,
+        64,
+        100,
+        80,
+        120,
+        357,
+        271,
+        266,
+        127,
+        74,
+        97,
+        99,
+        37,
+        315,
+        19,
+        360,
+        159,
+        359,
+        220,
+        307,
+        162,
+        151,
+        240,
+        223,
+        249,
+        251,
+        7,
+        207,
+        157,
+        211,
+        149,
+        344,
+        208,
+        177,
+        96,
+        11,
+        311,
+        338,
+        69,
+        303,
+        6,
+        381,
+        305,
+        109,
+        170,
+        133,
+        167,
+        9,
+        118,
+        253,
+        31,
+        59,
+        323,
+        322,
+        238,
+        164,
+        377,
+        144,
+        341,
+        188,
+        261,
+        173,
+        103,
+        284,
+        25,
+        362,
+        318,
+        105,
+        192,
+        90,
+        374,
+        143,
+        269,
+        48,
+        104,
+        320,
+        62,
+        198,
+        147,
+        146,
+        290,
+        190,
+        191,
+        335,
+        281,
+        60,
+        131,
+        165,
+        84,
+        8,
+        292,
+        169,
+        368,
+        288,
+        18,
+        1,
+        268,
+        340,
+        364,
+        141,
+        329,
+        259,
+        86,
+        294,
+        286,
+        333,
+        30,
+        115,
+        132,
+        334,
+        355,
+        297,
+        171,
+        102,
+        347,
+        182,
+        317,
+        339,
+        313,
+        226,
+        54,
+        361,
+        314,
+        247,
+        245,
+        42,
+        380,
+        121,
+        168,
+        201,
+        264,
+        196,
+        257,
+        354,
+        17,
+        124,
+        187,
+        21,
+        20,
+        145,
+        213,
+        14,
+        61,
+        267,
+        206,
+        212,
+        92,
+        296,
+        4,
+        304,
+        82,
+        153,
+        250,
+        330,
+        199,
+        300,
+        41,
+        243,
+        95,
+        39,
+        50,
+        155,
+        241,
+        163,
+        215,
+        76,
+        160,
+        222,
+        27,
+        233,
+        129,
+        45,
+        262,
+        272,
+        67,
+        248,
+        224,
+        184,
+        244,
+        0,
+        328,
+        319,
+        366,
+        75,
+        382,
+        349,
+        363,
+        58,
+        5,
+        128,
+        239,
+        195,
+        197,
+        32,
+        350,
+        351,
+        78,
+        56,
+        24,
+        46,
+        252,
+        260,
+        70,
+        298,
+        326,
+        204,
+        219,
+        134,
+        275,
+        126,
+        376,
+        337,
+        73,
+        234,
+        202,
+        255,
+        289,
+        293,
+        108,
+        33,
+        137,
+        205,
+        161,
+        369,
+        117,
+        28,
+        166,
+        356,
+        285,
+        138,
+        383,
+        236,
+        312,
+        378,
+        273,
+        87,
+        36,
+        136,
+        107,
+        181,
+        189,
+        83,
+        186,
+        232,
+        348,
+        342,
+        51,
+        365,
+        331,
+        148,
+        116,
+        23,
+        35,
+        98,
+        295,
+        185,
+        316,
+        321,
+        150,
+        282,
+        40,
+        193,
+        63,
+        274,
+        235,
+        22,
+        135,
+        309,
+        176,
+        183,
+        49,
+        194,
+        367,
+        375,
+        172,
+        110,
+        79,
+        353,
+        174,
+        370,
+        81,
+        3,
+        142,
+        301,
+        229,
+        112,
+        214,
+        373,
+        332,
+        101,
+        287,
+        13,
+        308,
+        258,
+        119,
+        111,
+        47,
+        15,
+        16,
+        216,
+        302,
+        44,
+        279,
+        346,
+        52,
+        71,
+        114,
+        125,
+        140,
+        379,
+        12,
+        57,
+        327
+      ]
+    }
+  ]
+}

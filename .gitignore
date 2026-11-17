@@ -1,0 +1,22 @@
+# Generated runs, environments, and local checkpoints
+/output/
+/checkpoint/
+/checkpoints/
+.venv*/
+venv/
+*.safetensors
+*.ckpt
+*.pth
+*.bundle
+*.zip
+
+# Python and local configuration
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db

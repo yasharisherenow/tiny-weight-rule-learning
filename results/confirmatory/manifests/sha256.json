@@ -1,0 +1,9 @@
+{
+  "analysis.json": "208f41ce148a8cb40f1ff9fb401659c1586c0246d42160cbccb15477cc9f0bd7",
+  "checkpoint.json": "29d8d37b85f2f9929fa66402964e660dcd3b74aa3e1ba63433bc49ad7fd790e2",
+  "edl-inputs.json": "53f0476dbe97af7fada5676e1326f25ff33d56fad2017dec551129f616fc5087",
+  "mask-geometry.json": "57ccab86d2451bc3aa07c69392f7b540615f5ef7cad74cbfdd48fd474ddbcba1",
+  "masks.json": "aa2b10f481e3eac84f3dd29ad58aa374eaad7d56c61d3f605ed994054ac721e2",
+  "protocol.json": "3ab306dcffeca03dd03421e5627cdd470d12be66ada7d8a9b5263e92a7529a6c",
+  "settings.json": "4fcf81dc5b4a118d71f5160318073fe81bb0a9f37dc980d85404a8bdb96a8b8a"
+}
